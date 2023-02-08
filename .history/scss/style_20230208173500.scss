@@ -74,12 +74,12 @@ ul {
 .escondidos{
     display: none;
     text-align: center;
-    justify-content: space-around;
 }
 
 
 .menu_item:hover .escondidos{
     display: block;
+    margin: auto;
 }
 
 
