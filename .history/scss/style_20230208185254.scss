@@ -95,10 +95,8 @@ ul li a img{
     animation-delay: 0s;
 }
 
-ol{
-    ul{
-        padding-left: 0rem;
-    }
+ol, ul{
+    padding-left: 0rem;
 }
 @keyframes luz{
     0%{border:solid 2px none;}
