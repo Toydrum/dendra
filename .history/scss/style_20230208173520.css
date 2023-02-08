@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../assets/backgroundimage.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+:root {
+  --cafe: #512f05;
+  --azulBonito: #b5dfca;
+  --azulFuerte: #1768ac;
+  --naranja: #fe7f2d;
+  --violeta: #af34ee;
+}
+
+#menu_principal_index {
+  background: var(--cafe); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--cafe) 17%, #ffffff 50%, var(--cafe) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="var(--cafe)", endColorstr="var(--cafe)",GradientType=1 ); /* IE6-9 */
+}
+
+#menu_principal_contacto {
+  background: var(--azulBonito); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--azulBonito) 17%, #ffffff 50%, var(--azulBonito) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--azulBonito)", endColorstr="var(--azulBonito)", GradientType=1); /* IE6-9 */
+}
+
+#menu_principal_bio {
+  background: var(--azulFuerte); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--azulFuerte) 17%, #ffffff 50%, var(--azulFuerte) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--azulFuerte)", endColorstr="var(--azulFuerte)", GradientType=1); /* IE6-9 */
+}
+
+#menu_principal_merch {
+  background: var(--naranja); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--naranja) 17%, #ffffff 50%, var(--naranja) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--naranja)", endColorstr="var(--naranja)", GradientType=1); /* IE6-9 */
+}
+
+#menu_principal_musica {
+  background: var(--violeta); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--violeta)", endColorstr="var(--violeta)", GradientType=1); /* IE6-9 */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.escondidos {
+  display: none;
+  text-align: center;
+}
+
+.menu_item:hover .escondidos {
+  display: block;
+}
+
+ul li a img {
+  padding: 0rem;
+  height: 4.75rem;
+  width: 4.75rem;
+  border-radius: 3.5rem;
+  animation-name: luz;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 0s;
+}
+
+@keyframes luz {
+  0% {
+    border: solid 2px none;
+  }
+  25% {
+    border: solid 2px green;
+  }
+  50% {
+    border: solid 2px red;
+  }
+  75% {
+    border: solid 2px blue;
+  }
+  100% {
+    border: solid 2px none;
+  }
+}
+ul li a img:hover {
+  transform: scale(1.3, 1.3);
+  transition: all 1s;
+}
+
+header ul li a {
+  display: block;
+  margin: 15px;
+}
+
+main {
+  color: white;
+}
+
+article {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 75vw;
+  display: block;
+  margin: 1.25rem auto;
+  padding: 1.25rem;
+  border-radius: 1rem;
+}
+
+h1 {
+  margin: 15px auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 1rem;
+  padding: 0 2rem;
+}
+
+input {
+  margin: 1rem auto;
+  display: block;
+  padding: 0.5rem;
+}
+
+button {
+  background-color: var(--violeta);
+  border-radius: 10px;
+  padding: 0.5rem;
+  display: block;
+  margin: 0.75rem auto;
+}
+
+.caja_merch {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100vw;
+  height: 100vw;
+}/*# sourceMappingURL=style_20230208173520.css.map */
