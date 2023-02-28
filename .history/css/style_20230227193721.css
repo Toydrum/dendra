@@ -10,12 +10,7 @@ body {
   background-position: center;
   background-repeat: no-repeat; }
 
-:root {
-  --cafe: #512f05;
-  --azulBonito: #b5dfca;
-  --azulFuerte: #1768ac;
-  --naranja: #fe7f2d;
-  --violeta: #af34ee; }
+
 
 #menu_principal_index {
   background: var(--cafe);
@@ -85,15 +80,6 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly; }
-  ul img {
-    padding: 0rem;
-    height: 4.75rem;
-    width: 4.75rem;
-    border-radius: 3.5rem;
-    animation-name: luz;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
-    animation-delay: 0s; }
 
 .escondidos {
   display: none;
@@ -102,6 +88,16 @@ ul {
 
 .menu_item:hover .escondidos {
   display: block; }
+
+ul li a img {
+  padding: 0rem;
+  height: 4.75rem;
+  width: 4.75rem;
+  border-radius: 3.5rem;
+  animation-name: luz;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 0s; }
 
 @keyframes luz {
   0% {
@@ -165,6 +161,3 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   width: 100vw;
   height: 100vw; }
-
-ol ul {
-  padding-left: 0rem; }

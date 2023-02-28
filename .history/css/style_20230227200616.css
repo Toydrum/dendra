@@ -103,6 +103,17 @@ ul {
 .menu_item:hover .escondidos {
   display: block; }
 
+ul li a img {
+  padding: 0rem;
+  height: 4.75rem;
+  width: 4.75rem;
+  border-radius: 3.5rem;
+  animation-name: luz;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  animation-delay: 0s; }
+
+
 @keyframes luz {
   0% {
     border: solid 2px none; }
@@ -166,5 +177,6 @@ button {
   width: 100vw;
   height: 100vw; }
 
-ol ul {
-  padding-left: 0rem; }
+
+  ol ul {
+    padding-left: 0rem; }

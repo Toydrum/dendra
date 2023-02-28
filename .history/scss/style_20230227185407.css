@@ -47,10 +47,6 @@ a {
   color: black;
 }
 
-ol ul {
-  padding-left: 0rem;
-}
-
 ul {
   list-style: none;
   display: flex;
@@ -58,14 +54,13 @@ ul {
 }
 
 .escondidos {
-  display: flex;
+  display: none;
   text-align: center;
   justify-content: space-around;
 }
 
 .menu_item:hover .escondidos {
   display: block;
-  margin: auto;
 }
 
 ul li a img {
@@ -77,6 +72,10 @@ ul li a img {
   animation-iteration-count: infinite;
   animation-duration: 10s;
   animation-delay: 0s;
+}
+
+ol ul {
+  padding-left: 0rem;
 }
 
 @keyframes luz {
@@ -156,4 +155,4 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   width: 100vw;
   height: 100vw;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style_20230227185407.css.map */

@@ -1,0 +1,47 @@
+:root {
+    --cafe: #512f05;
+    --azulBonito: #b5dfca;
+    --azulFuerte: #1768ac;
+    --naranja: #fe7f2d;
+    --violeta: #af34ee;
+}
+
+#menu_principal_index{
+background: var(--cafe); /* Old browsers */
+background: -moz-linear-gradient(left,  var(--cafe) 17%, #ffffff 50%, var(--cafe) 84%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  var(--cafe) 17%,#ffffff 50%,var(--cafe) 84%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  var(--cafe) 17%,#ffffff 50%,var(--cafe) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='var(--cafe)', endColorstr='var(--cafe)',GradientType=1 ); /* IE6-9 */
+}
+
+#menu_principal_contacto {
+    background: var(--azulBonito); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--azulBonito) 17%, #ffffff 50%, var(--azulBonito) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--azulBonito) 17%, #ffffff 50%, var(--azulBonito) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--azulBonito) 17%, #ffffff 50%, var(--azulBonito) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--azulBonito)', endColorstr='var(--azulBonito)', GradientType=1); /* IE6-9 */    
+}
+
+#menu_principal_bio {
+    background: var(--azulFuerte); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--azulFuerte) 17%, #ffffff 50%, var(--azulFuerte) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--azulFuerte) 17%, #ffffff 50%, var(--azulFuerte) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--azulFuerte) 17%, #ffffff 50%, var(--azulFuerte) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--azulFuerte)', endColorstr='var(--azulFuerte)', GradientType=1); /* IE6-9 */
+}
+
+#menu_principal_merch {
+    background: var(--naranja); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--naranja) 17%, #ffffff 50%, var(--naranja) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--naranja) 17%, #ffffff 50%, var(--naranja) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--naranja) 17%, #ffffff 50%, var(--naranja) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--naranja)', endColorstr='var(--naranja)', GradientType=1); /* IE6-9 */
+}
+
+#menu_principal_musica {
+    background: var(--violeta); /* Old browsers */
+    background: -moz-linear-gradient(left, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--violeta)', endColorstr='var(--violeta)', GradientType=1); /* IE6-9 */
+}
