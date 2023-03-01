@@ -12,34 +12,46 @@ body {
   background-repeat: no-repeat;
 }
 
+:root {
+  --cafe: #512f05;
+  --azulBonito: #b5dfca;
+  --azulFuerte: #1768ac;
+  --naranja: #fe7f2d;
+  --violeta: #af34ee;
+}
+
 #menu_principal_index {
-  background: var(#512f05); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, var(#512f05) 17%, #ffffff 50%, var(#512f05) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="var($cafe)", endColorstr="var($cafe)",GradientType=1 ); /* IE6-9 */
+  background: var(--cafe); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--cafe) 17%, #ffffff 50%, var(--cafe) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="var(--cafe)", endColorstr="var(--cafe)",GradientType=1 ); /* IE6-9 */
 }
 
 #menu_principal_contacto {
-  background: var(#b5dfca); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, var(#b5dfca) 17%, #ffffff 50%, var(#b5dfca) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var($azulBonito)", endColorstr="var($azulBonito)", GradientType=1); /* IE6-9 */
+  background: var(--azulBonito); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--azulBonito) 17%, #ffffff 50%, var(--azulBonito) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--azulBonito)", endColorstr="var(--azulBonito)", GradientType=1); /* IE6-9 */
 }
 
 #menu_principal_bio {
-  background: var(#1768ac); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, var(#1768ac) 17%, #ffffff 50%, var(#1768ac) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var($azulFuerte)", endColorstr="var($azulFuerte)", GradientType=1); /* IE6-9 */
+  background: var(--azulFuerte); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--azulFuerte) 17%, #ffffff 50%, var(--azulFuerte) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--azulFuerte)", endColorstr="var(--azulFuerte)", GradientType=1); /* IE6-9 */
 }
 
 #menu_principal_merch {
-  background: var(#fe7f2d); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, var(#fe7f2d) 17%, #ffffff 50%, var(#fe7f2d) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var($naranja)", endColorstr="var($naranja)", GradientType=1); /* IE6-9 */
+  background: var(--naranja); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--naranja) 17%, #ffffff 50%, var(--naranja) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--naranja)", endColorstr="var(--naranja)", GradientType=1); /* IE6-9 */
 }
 
 #menu_principal_musica {
-  background: var(#af34ee); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to right, var(#af34ee) 17%, #ffffff 50%, var(#af34ee) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var($violeta)", endColorstr="var($violeta)", GradientType=1); /* IE6-9 */
+  background: var(--violeta); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--violeta)", endColorstr="var(--violeta)", GradientType=1); /* IE6-9 */
+}
+
+main {
+  margin: auto;
 }
 
 a {
@@ -47,28 +59,12 @@ a {
   color: black;
 }
 
-ol ul {
-  padding-left: 0rem;
-}
-
 ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
 }
-
-.escondidos {
-  display: flex;
-  text-align: center;
-  justify-content: space-around;
-}
-
-.menu_item:hover .escondidos {
-  display: block;
-  margin: auto;
-}
-
-ul li a img {
+ul img {
   padding: 0rem;
   height: 4.75rem;
   width: 4.75rem;
@@ -77,6 +73,20 @@ ul li a img {
   animation-iteration-count: infinite;
   animation-duration: 10s;
   animation-delay: 0s;
+}
+ul:hover {
+  transform: scale(1.3, 1.3);
+  transition: all 1s;
+}
+
+.escondidos {
+  display: none;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.menu_item:hover .escondidos {
+  display: block;
 }
 
 @keyframes luz {
@@ -96,18 +106,9 @@ ul li a img {
     border: solid 2px none;
   }
 }
-ul li a img:hover {
-  transform: scale(1.3, 1.3);
-  transition: all 1s;
-}
-
 header ul li a {
   display: block;
   margin: 15px;
-}
-
-main {
-  color: white;
 }
 
 article {
@@ -143,7 +144,7 @@ input {
 }
 
 button {
-  background-color: var(#af34ee);
+  background-color: var(--violeta);
   border-radius: 10px;
   padding: 0.5rem;
   display: block;
@@ -156,4 +157,12 @@ button {
   grid-template-rows: 1fr 1fr 1fr;
   width: 100vw;
   height: 100vw;
+}
+
+ol ul {
+  padding-left: 0rem;
+}
+
+footer {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

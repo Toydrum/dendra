@@ -4,7 +4,7 @@
   box-sizing: border-box; }
 
 body {
-  background: url("../assets/backgroundimage.png");
+  background-image: url("../assets/backgroundimage.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -77,6 +77,9 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--violeta)', endColorstr='var(--violeta)', GradientType=1);
   /* IE6-9 */ }
 
+main {
+  margin: auto; }
+
 a {
   text-decoration: none;
   color: black; }
@@ -94,6 +97,9 @@ ul {
     animation-iteration-count: infinite;
     animation-duration: 10s;
     animation-delay: 0s; }
+  ul:hover {
+    transform: scale(1.3, 1.3);
+    transition: all 1s; }
 
 .escondidos {
   display: none;
@@ -115,16 +121,9 @@ ul {
   100% {
     border: solid 2px none; } }
 
-ul li a img:hover {
-  transform: scale(1.3, 1.3);
-  transition: all 1s; }
-
 header ul li a {
   display: block;
   margin: 15px; }
-
-main {
-  color: white; }
 
 article {
   background-color: rgba(0, 0, 0, 0.5);
@@ -168,3 +167,6 @@ button {
 
 ol ul {
   padding-left: 0rem; }
+
+footer {
+  color: white; }
