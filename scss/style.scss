@@ -19,6 +19,7 @@ body{
 
 main{
     margin: auto;
+    height: 90%;
 }
 
 a{
@@ -77,6 +78,7 @@ header ul li a{
 
 
 article{
+    color: whitesmoke;
     background-color: rgba(0,0,0,0.5);
     width: 75vw;
     display: block;
@@ -84,6 +86,15 @@ article{
     padding: 1.25rem;
     border-radius: 1rem;
 }
+
+.imagen_fondo{
+    overflow:auto;
+                h1{
+                    color: whitesmoke;
+                }
+    
+}
+
 h1{
     margin: 15px auto;
 }
@@ -115,12 +126,23 @@ button {
     margin: 0.75rem auto;
 }
 
-.caja_merch{
+.cajaMerch{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows:  1fr 1fr 1fr;
     width: 100vw;
     height:100vw;}
+
+.carousel-inner{
+                div{
+                    div{
+                        color: black;
+                    }
+                    .blanco{
+                        color: whitesmoke;
+                    }
+                }
+}    
 
     ol{
         ul{
@@ -130,5 +152,31 @@ button {
 
 footer{
     color: white;
+    display: block;
+    position:relative;
 
+}
+
+article{
+        div{
+            img{
+            }
+            div{
+                .card-title{
+                    color: black;
+                }
+                .card-text{
+                    color: black;
+                }
+            }
+        }
+}
+
+
+.contacto{
+
+    margin: 0 auto;
+        h1{
+            color: whitesmoke;
+    }
 }
