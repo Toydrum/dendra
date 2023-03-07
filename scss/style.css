@@ -5,7 +5,7 @@
 }
 
 body {
-  background: url("../assets/backgroundimage.png");
+  background-image: url("../assets/backgroundimage.png");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -48,10 +48,6 @@ body {
   background: var(--violeta); /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, var(--violeta) 17%, #ffffff 50%, var(--violeta) 84%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="var(--violeta)", endColorstr="var(--violeta)", GradientType=1); /* IE6-9 */
-}
-
-main {
-  margin: auto;
 }
 
 a {
@@ -111,13 +107,32 @@ header ul li a {
   margin: 15px;
 }
 
+@media screen and (max-width: 420px) {
+  #menu_principal_index {
+    display: flex;
+    flex-direction: column;
+  }
+}
+main {
+  margin: auto;
+  height: 90%;
+}
+
 article {
+  color: whitesmoke;
   background-color: rgba(0, 0, 0, 0.5);
   width: 75vw;
   display: block;
   margin: 1.25rem auto;
   padding: 1.25rem;
   border-radius: 1rem;
+}
+
+.imagen_fondo {
+  overflow: auto;
+}
+.imagen_fondo h1 {
+  color: whitesmoke;
 }
 
 h1 {
@@ -151,12 +166,19 @@ button {
   margin: 0.75rem auto;
 }
 
-.caja_merch {
+.cajaMerch {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   width: 100vw;
   height: 100vw;
+}
+
+.carousel-inner div div {
+  color: black;
+}
+.carousel-inner div .blanco {
+  color: whitesmoke;
 }
 
 ol ul {
@@ -165,4 +187,20 @@ ol ul {
 
 footer {
   color: white;
+  display: block;
+  position: relative;
+}
+
+article div div .card-title {
+  color: black;
+}
+article div div .card-text {
+  color: black;
+}
+
+.contacto {
+  margin: 0 auto;
+}
+.contacto h1 {
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */

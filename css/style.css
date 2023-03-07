@@ -1,15 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
-body {
-  background-image: url("../assets/backgroundimage.png");
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat; }
-
 :root {
   --cafe: #512f05;
   --azulBonito: #b5dfca;
@@ -18,6 +6,7 @@ body {
   --violeta: #af34ee; }
 
 #menu_principal_index {
+  width: 100%;
   background: var(--cafe);
   /* Old browsers */
   background: -moz-linear-gradient(left, var(--cafe) 17%, #ffffff 50%, var(--cafe) 84%);
@@ -77,10 +66,6 @@ body {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='var(--violeta)', endColorstr='var(--violeta)', GradientType=1);
   /* IE6-9 */ }
 
-main {
-  margin: auto;
-  height: 90%; }
-
 a {
   text-decoration: none;
   color: black; }
@@ -89,10 +74,13 @@ ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly; }
+  ul a {
+    font-size: small;
+    margin-top: 10px; }
   ul img {
     padding: 0rem;
-    height: 4.75rem;
-    width: 4.75rem;
+    height: 2.75rem;
+    width: 2.75rem;
     border-radius: 3.5rem;
     animation-name: luz;
     animation-iteration-count: infinite;
@@ -108,7 +96,7 @@ ul {
   justify-content: space-around; }
 
 .menu_item:hover .escondidos {
-  display: block; }
+  display: flex; }
 
 @keyframes luz {
   0% {
@@ -123,8 +111,29 @@ ul {
     border: solid 2px none; } }
 
 header ul li a {
-  display: block;
-  margin: 15px; }
+  display: flex;
+  margin: 5px; }
+
+@media screen and (max-width: 420px) {
+  #menu_principal_index ul {
+    display: flex;
+    flex-direction: column; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  background-image: url("../assets/backgroundimage.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+main {
+  margin: auto;
+  height: auto; }
 
 article {
   color: whitesmoke;
@@ -178,21 +187,22 @@ button {
 .carousel-inner div .blanco {
   color: whitesmoke; }
 
-ol ul {
-  padding-left: 0rem; }
-
-footer {
-  color: white;
-  display: block;
-  position: relative; }
-
 article div div .card-title {
   color: black; }
 
 article div div .card-text {
   color: black; }
 
+footer {
+  color: white;
+  display: block;
+  position: relative;
+  width: 100%; }
+
 .contacto {
   margin: 0 auto; }
   .contacto h1 {
     color: whitesmoke; }
+
+ul {
+  padding-left: 0rem; }
