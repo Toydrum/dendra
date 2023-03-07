@@ -22,7 +22,10 @@ main{
     margin: auto;
     height: auto;
 }
-
+.iconos{
+    display: flex;
+    justify-content: space-around;
+}
 
 article{
     color: whitesmoke;
@@ -71,6 +74,8 @@ button {
     padding: 0.5rem;
     display: block;
     margin: 0.75rem auto;
+    margin-top: 80px;
+    margin-bottom: 200px;
 }
 
 .cajaMerch{
@@ -106,11 +111,11 @@ article{
             }
         }
     }
-    
-    footer{
+
+footer{
         color: white;
-        display: block;
-        position:relative;
+        display: flex;
+        flex-direction: column-reverse;
         width: 100%;
     
     }
