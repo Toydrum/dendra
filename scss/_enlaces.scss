@@ -1,0 +1,16 @@
+.sideBar{
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    align-items: center;
+    background-color: purple;
+    border-radius: 5px;
+        .hyperlink{
+            color: whitesmoke;
+            font-size:x-large;
+            margin: 30px;
+            padding: 10px;
+            border: 3px solid ;
+            border-radius: 5px;           
+        }
+}
